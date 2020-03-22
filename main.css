@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+:root {
+    --main-red : #D90037;
+}
+body {
+    background-image: url("./assets/4k-wallpaper-background-blur-blurred-background-1242348.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+
+.box {
+    width: 50%;
+    height: 100%;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player {
+    margin-bottom: 50px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.score {
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+.current-score {
+    width: 100px;
+    height: 70px;
+    background-color: var(--main-red);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.current-label {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.current-value {
+    color: white;
+}
+
+.left-box {
+    background-color: #F2F2F2;
+    
+}
+
+.right-box {
+    background-color: #D9D9D9;
+}
+
+.new-game {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.roll-dice {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translateX(-50%);
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid var(--main-red);
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.hold {
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    transform: translateX(-50%);
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid var(--main-red);
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.dice {
+    width : 100px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.new-game span img {
+    position: relative;
+    width: 20px ;
+    top: 5px;
+    left: -5px;
+
+   
+}
+
+.small-circle {
+    width: 15px;
+    transform: translateY(-5px);
+}
+
+.circle-2 {
+    visibility: hidden;
+}
